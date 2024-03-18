@@ -71,7 +71,14 @@ void julgaTamPalavra(int tamPalEscolhida, char palavraAtual[], char novaPalavra[
 int main(){
 
   int tamPalEscolhida, i, j = 0, limPrimeiraMetade;
-  char palavraEscolhida[20], novaPalavra[20], primeiraMetade[20], segundaMetade[20];
+  char palavraEscolhida[40], novaPalavra[40], primeiraMetade[40], segundaMetade[40];
+
+  for (i = 0; i < 40; i++){
+    palavraEscolhida[i] = '\0';
+    novaPalavra[i] = '\0';
+    primeiraMetade[i] = '\0';
+    segundaMetade[i] = '\0';
+  }
 
   printf("\nEscolha uma palavra: \n");
   scanf("%s", palavraEscolhida);
